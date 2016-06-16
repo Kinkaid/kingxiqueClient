@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[OwnerShopCouponCardCell awakeFromNib]:OwnerShopCouponCardCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(SCREEN_WIDTH-32)*163.0/292.0+16">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[EditorAddressController saveAddressAction:]:EditorAddressController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.myBlock">
+            </PersistentString>
+            <PersistentString
+               value = "self.addressBlock">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RecoverPaymentPasswordMiddleStepController textFieldShouldBeginEditing:]:RecoverPaymentPasswordMiddleStepController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bankTextField">
+            </PersistentString>
+            <PersistentString
+               value = "textField == self.bankTextField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PrivilegeCircleController tableView:heightForRowAtIndexPath:]:PrivilegeCircleController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.commentHeightArr[indexPath.row]">
+            </PersistentString>
+            <PersistentString
+               value = "[self.commentHeightArr[indexPath.row] floatValue]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SpecialProductCommentCell tableView:cellForRowAtIndexPath:]:SpecialProductCommentCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.commentListArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OwnerShopCouponCardCell tableView:heightForRowAtIndexPath:]:OwnerShopCouponCardCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(SCREEN_WIDTH-95)*163.0/292.0+16">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OwnerShopCouponCircleController tableView:cellForRowAtIndexPath:]:OwnerShopCouponCircleController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArr">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.dataArr[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginController loginAction:]:LoginController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "msg">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[TDUserDefaultsUtil havePhoneNum]:TDUserDefaultsUtil.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[userDefaults objectForKey:@&quot;mobile&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SpecialProductCommentController tableView:cellForRowAtIndexPath:]:SpecialProductCommentController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.commentListArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CommentLargeImgController initWithScrollView]:CommentLargeImgController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imgArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

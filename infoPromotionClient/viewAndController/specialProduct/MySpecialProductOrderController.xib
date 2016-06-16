@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySpecialProductOrderController">
+            <connections>
+                <outlet property="segmentControl" destination="miB-Ab-Aur" id="q8X-3j-tEw"/>
+                <outlet property="tableView" destination="OtB-3f-vnC" id="kAy-fa-WMN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OtB-3f-vnC">
+                    <rect key="frame" x="0.0" y="38" width="320" height="530"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PBH-6I-WjU"/>
+                        <outlet property="delegate" destination="-1" id="Wc6-x6-0dw"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miB-Ab-Aur" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="bcg-o2-0Zz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="segmentControlAction:" destination="-1" eventType="valueChanged" id="YvI-Ii-vua"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OtB-3f-vnC" firstAttribute="top" secondItem="miB-Ab-Aur" secondAttribute="bottom" id="8xP-VH-4G6"/>
+                <constraint firstAttribute="bottom" secondItem="OtB-3f-vnC" secondAttribute="bottom" id="GJ0-ya-B3E"/>
+                <constraint firstItem="miB-Ab-Aur" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ig9-Lw-66Q"/>
+                <constraint firstItem="miB-Ab-Aur" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZsQ-P8-eKe"/>
+                <constraint firstItem="OtB-3f-vnC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gUj-pp-5Yl"/>
+                <constraint firstAttribute="trailing" secondItem="OtB-3f-vnC" secondAttribute="trailing" id="gVt-uE-iYn"/>
+                <constraint firstAttribute="trailing" secondItem="miB-Ab-Aur" secondAttribute="trailing" id="hiK-Y4-dpr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="615" y="530"/>
+        </view>
+    </objects>
+</document>

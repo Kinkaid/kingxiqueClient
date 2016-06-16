@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpecialProductListController">
+            <connections>
+                <outlet property="shopNameLabel" destination="wEQ-DI-Jfj" id="Wh7-gF-Ogx"/>
+                <outlet property="tableView" destination="ios-8e-gJq" id="JhE-qN-bKy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ios-8e-gJq">
+                    <rect key="frame" x="0.0" y="40" width="320" height="528"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GxP-AI-XJh"/>
+                        <outlet property="delegate" destination="-1" id="bcv-F1-cSW"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGd-Dg-ErX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发行商铺:LEO的小店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-DI-Jfj">
+                            <rect key="frame" x="15" y="12" width="290" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wEQ-DI-Jfj" firstAttribute="centerY" secondItem="BGd-Dg-ErX" secondAttribute="centerY" id="0pJ-UP-jzs"/>
+                        <constraint firstItem="wEQ-DI-Jfj" firstAttribute="leading" secondItem="BGd-Dg-ErX" secondAttribute="leading" constant="15" id="XF2-kr-65i"/>
+                        <constraint firstAttribute="height" constant="40" id="Z0r-v7-duq"/>
+                        <constraint firstAttribute="trailing" secondItem="wEQ-DI-Jfj" secondAttribute="trailing" constant="15" id="oKG-ZI-iS4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ios-8e-gJq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FYP-fi-0JL"/>
+                <constraint firstItem="ios-8e-gJq" firstAttribute="top" secondItem="BGd-Dg-ErX" secondAttribute="bottom" id="HEp-dp-qcP"/>
+                <constraint firstAttribute="bottom" secondItem="ios-8e-gJq" secondAttribute="bottom" id="HO6-XA-ki8"/>
+                <constraint firstAttribute="trailing" secondItem="ios-8e-gJq" secondAttribute="trailing" id="Ilo-JO-O59"/>
+                <constraint firstItem="BGd-Dg-ErX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QMZ-uz-t7h"/>
+                <constraint firstItem="ios-8e-gJq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RFL-en-P6A"/>
+                <constraint firstAttribute="trailing" secondItem="BGd-Dg-ErX" secondAttribute="trailing" id="h3a-tj-hBW"/>
+                <constraint firstItem="BGd-Dg-ErX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ikK-Sh-g4Z"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                    <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RFL-en-P6A"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="659" y="476"/>
+        </view>
+    </objects>
+</document>

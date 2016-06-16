@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillController">
+            <connections>
+                <outlet property="_billTable" destination="qHR-UW-tKn" id="pwP-tF-b9W"/>
+                <outlet property="_tabBar" destination="3Hy-LA-7dD" id="ILV-Rb-csf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-LA-7dD" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Z1S-5F-2uf"/>
+                    </constraints>
+                    <connections>
+                        <action selector="tabbarValueChangedAction:" destination="-1" eventType="valueChanged" id="HK5-LF-39v"/>
+                    </connections>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qHR-UW-tKn">
+                    <rect key="frame" x="0.0" y="114" width="320" height="454"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qHR-UW-tKn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6NH-K0-jix"/>
+                <constraint firstItem="3Hy-LA-7dD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="VF6-cZ-nSc"/>
+                <constraint firstItem="3Hy-LA-7dD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y9F-Dm-mYR"/>
+                <constraint firstAttribute="trailing" secondItem="3Hy-LA-7dD" secondAttribute="trailing" id="nLw-kD-rva"/>
+                <constraint firstAttribute="bottom" secondItem="qHR-UW-tKn" secondAttribute="bottom" id="obz-T4-MvN"/>
+                <constraint firstItem="qHR-UW-tKn" firstAttribute="top" secondItem="3Hy-LA-7dD" secondAttribute="bottom" id="piA-oj-2vU"/>
+                <constraint firstAttribute="trailing" secondItem="qHR-UW-tKn" secondAttribute="trailing" id="xHl-Y3-k3E"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

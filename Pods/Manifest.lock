@@ -1,0 +1,88 @@
+PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection (= 2.4.1)
+    - AFNetworking/NSURLSession (= 2.4.1)
+    - AFNetworking/Reachability (= 2.4.1)
+    - AFNetworking/Security (= 2.4.1)
+    - AFNetworking/Serialization (= 2.4.1)
+    - AFNetworking/UIKit (= 2.4.1)
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMap2DMap (2.5.0)
+  - ASProgressPopUpView (0.8)
+  - CocoaSecurity (1.2.4)
+  - CorePlot (1.5.1)
+  - DZNSegmentedControl (1.2.2)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - GPUImage (0.1.7)
+  - HMSegmentedControl (1.4.0)
+  - IQKeyboardManager (3.2.0.3)
+  - JSONKit-NoWarning (1.2)
+  - KLCPopup (1.0)
+  - libqrencode (3.4.2)
+  - MJRefresh (1.4.7)
+  - pop (1.0.7)
+  - UIColor-HexString (1.1.0)
+  - UIView+Copy (0.0.8)
+  - ViewUtils (1.1.2)
+  - WebViewJavascriptBridge (4.1.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.4.1)
+  - AMap2DMap (~> 2.5.0)
+  - ASProgressPopUpView (~> 0.8)
+  - CocoaSecurity (~> 1.2.4)
+  - CorePlot (~> 1.5.1)
+  - DZNSegmentedControl (~> 1.2.1)
+  - FMDB (~> 2.4)
+  - GPUImage (~> 0.1.6)
+  - HMSegmentedControl (~> 1.4.0)
+  - IQKeyboardManager (~> 3.2.0.1)
+  - JSONKit-NoWarning (~> 1.2)
+  - KLCPopup (~> 1.0)
+  - libqrencode (~> 3.4.2)
+  - MJRefresh (~> 1.4.5)
+  - pop (~> 1.0.7)
+  - UIColor-HexString (~> 1.1.0)
+  - UIView+Copy (~> 0.0.7)
+  - ViewUtils (~> 1.1.2)
+  - WebViewJavascriptBridge (~> 4.1.4)
+
+SPEC CHECKSUMS:
+  AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  AMap2DMap: 4952d35e7d3abdf36a568115bda21bd2b0d65e9b
+  ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  CorePlot: 53d823a4de5e4e662311cae4cdcb230e146c5c90
+  DZNSegmentedControl: 8a7fdd743672742c692106f4456aaede10d43131
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  HMSegmentedControl: c2fffcd5f391c1bcd3db510b1bea645fce4e08e5
+  IQKeyboardManager: 7b071d1284b47b1c0c19891a042c2c65f118fa85
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  UIColor-HexString: f8a5612bd6772fed8db58ee594b42a0b2831750e
+  UIView+Copy: 77bec0c78490884e6d7eed5552b3718b5023d305
+  ViewUtils: 68e42c708a4b3912e39691cef5080282dc5013fb
+  WebViewJavascriptBridge: f10ac16f2cd3adf2b941bd79477c55a8f6e01044
+
+COCOAPODS: 0.35.0

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopMainController">
+            <connections>
+                <outlet property="contentView" destination="Dku-ei-Ich" id="6JU-rO-FnK"/>
+                <outlet property="segmentControl" destination="bmg-3o-Bkh" id="gl5-mh-fpM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmg-3o-Bkh" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="usn-U5-fuz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="segmentAction:" destination="-1" eventType="valueChanged" id="asI-Gh-znt"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dku-ei-Ich">
+                    <rect key="frame" x="0.0" y="114" width="320" height="454"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bmg-3o-Bkh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Gd7-so-1io"/>
+                <constraint firstAttribute="trailing" secondItem="Dku-ei-Ich" secondAttribute="trailing" id="Mx2-vL-h6D"/>
+                <constraint firstAttribute="bottom" secondItem="Dku-ei-Ich" secondAttribute="bottom" id="SDx-eF-usX"/>
+                <constraint firstAttribute="trailing" secondItem="bmg-3o-Bkh" secondAttribute="trailing" id="V5d-aG-dRU"/>
+                <constraint firstItem="bmg-3o-Bkh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YJy-qI-f3k"/>
+                <constraint firstItem="Dku-ei-Ich" firstAttribute="top" secondItem="bmg-3o-Bkh" secondAttribute="bottom" id="dQS-hh-478"/>
+                <constraint firstItem="Dku-ei-Ich" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h36-WM-fao"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="279" y="320"/>
+        </view>
+    </objects>
+</document>

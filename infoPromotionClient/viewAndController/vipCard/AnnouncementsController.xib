@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnnouncementsController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xja-na-Hr8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.顾客一旦充值,20%充值金额即划给发卡商家,由发卡商家预收此金额,并此20%金额如在未消费完的情况下因各类缘由退款,顾客需与商家协商退换" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLT-rJ-Pau">
+                            <rect key="frame" x="15" y="31" width="290" height="47"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="OJf-Hh-fnB"/>
+                        <constraint firstItem="fLT-rJ-Pau" firstAttribute="leading" secondItem="xja-na-Hr8" secondAttribute="leading" constant="15" id="XzC-iT-7CV"/>
+                        <constraint firstItem="fLT-rJ-Pau" firstAttribute="centerY" secondItem="xja-na-Hr8" secondAttribute="centerY" id="cPX-Kg-kgl"/>
+                        <constraint firstAttribute="trailing" secondItem="fLT-rJ-Pau" secondAttribute="trailing" constant="15" id="cf2-Ui-Dl5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.顾客卡内金额到期后,除划转给商家的20%预收款外,另外的80%部分的余额由银行托管,会员卡到期未消费部分自动退还给消费者." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59O-Q6-tUL">
+                    <rect key="frame" x="15" y="140" width="290" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-vA-Y57">
+                    <rect key="frame" x="0.0" y="217" width="320" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.顾客卡内金额在到期前,只能在开卡商铺及其指定的相关门店中使用." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53b-nv-KZb">
+                            <rect key="frame" x="15" y="39" width="290" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="53b-nv-KZb" secondAttribute="trailing" constant="15" id="IGc-yd-81y"/>
+                        <constraint firstItem="53b-nv-KZb" firstAttribute="leading" secondItem="pp5-vA-Y57" secondAttribute="leading" constant="15" id="LON-FN-t2h"/>
+                        <constraint firstAttribute="height" constant="110" id="h1g-JO-OOt"/>
+                        <constraint firstItem="53b-nv-KZb" firstAttribute="centerY" secondItem="pp5-vA-Y57" secondAttribute="centerY" id="kCI-qT-3Yh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.赠送部分,顾客会员卡到期前或退卡前,全部或部分未能消费,则自动取消" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBP-b4-qtP">
+                    <rect key="frame" x="15" y="357" width="290" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LBP-b4-qtP" secondAttribute="trailing" constant="15" id="38S-PX-njC"/>
+                <constraint firstItem="xja-na-Hr8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DZF-pD-gpf"/>
+                <constraint firstItem="LBP-b4-qtP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="EGZ-I4-PzQ"/>
+                <constraint firstItem="LBP-b4-qtP" firstAttribute="top" secondItem="pp5-vA-Y57" secondAttribute="bottom" constant="30" id="IsT-9Y-h3s"/>
+                <constraint firstItem="59O-Q6-tUL" firstAttribute="top" secondItem="xja-na-Hr8" secondAttribute="bottom" constant="30" id="JH9-Jj-FCB"/>
+                <constraint firstAttribute="trailing" secondItem="59O-Q6-tUL" secondAttribute="trailing" constant="15" id="LcF-ob-0ZG"/>
+                <constraint firstItem="pp5-vA-Y57" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O1u-ir-4Wk"/>
+                <constraint firstItem="pp5-vA-Y57" firstAttribute="top" secondItem="59O-Q6-tUL" secondAttribute="bottom" constant="30" id="TXY-jy-Z6n"/>
+                <constraint firstItem="59O-Q6-tUL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="U0Z-Md-LEJ"/>
+                <constraint firstAttribute="trailing" secondItem="xja-na-Hr8" secondAttribute="trailing" id="WGB-xV-YSC"/>
+                <constraint firstAttribute="trailing" secondItem="pp5-vA-Y57" secondAttribute="trailing" id="kHO-Z6-b2o"/>
+                <constraint firstItem="xja-na-Hr8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="slg-Ab-oCK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="357" y="479"/>
+        </view>
+    </objects>
+</document>

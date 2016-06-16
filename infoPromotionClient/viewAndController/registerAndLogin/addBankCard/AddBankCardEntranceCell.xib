@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="AddBankCardEntranceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankCardEntrance_tianjia.png" translatesAutoresizingMaskIntoConstraints="NO" id="VLr-G4-hn7">
+                        <rect key="frame" x="15" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8in-Us-BZ6"/>
+                            <constraint firstAttribute="height" constant="20" id="ML0-T4-I5c"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExL-Ua-3QE">
+                        <rect key="frame" x="50" y="13" width="80" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quwang1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7xj-Po-OeW">
+                        <rect key="frame" x="297" y="15" width="8" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="CWy-zk-QgC"/>
+                            <constraint firstAttribute="height" constant="15" id="HE7-qy-VQ8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7xj-Po-OeW" secondAttribute="trailing" constant="15" id="R1b-UO-fWA"/>
+                    <constraint firstItem="VLr-G4-hn7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="V0V-FW-96k"/>
+                    <constraint firstItem="ExL-Ua-3QE" firstAttribute="leading" secondItem="VLr-G4-hn7" secondAttribute="trailing" constant="15" id="aVV-5M-XbL"/>
+                    <constraint firstItem="ExL-Ua-3QE" firstAttribute="centerY" secondItem="VLr-G4-hn7" secondAttribute="centerY" id="rQ2-OO-JbX"/>
+                    <constraint firstItem="VLr-G4-hn7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tBO-Db-3hH"/>
+                    <constraint firstItem="7xj-Po-OeW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xLH-hT-iVH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                    <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="270" y="540"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bankCardEntrance_tianjia.png" width="20" height="20"/>
+        <image name="quwang1.png" width="8" height="15"/>
+    </resources>
+</document>

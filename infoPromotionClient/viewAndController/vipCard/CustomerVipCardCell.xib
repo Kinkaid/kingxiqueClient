@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomerVipCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mU-95-5I9">
+                        <rect key="frame" x="16" y="0.0" width="288" height="160"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vipCard_background_lvse.png" translatesAutoresizingMaskIntoConstraints="NO" id="L4V-53-npG">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L4V-53-npG" secondAttribute="height" multiplier="292:163" id="6bg-75-V9p"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCB-Yf-RNQ" userLabel="会员卡名称View">
+                                <rect key="frame" x="12" y="16" width="240" height="26"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="yuanlv.png" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-xg-5cr">
+                                        <rect key="frame" x="4" y="2" width="8" height="22"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酷迪宠物普通卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOV-vQ-jwf">
+                                        <rect key="frame" x="12" y="2" width="98" height="22"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="yuanlvyou.png" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-hD-vNi">
+                                        <rect key="frame" x="110" y="2" width="8" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mOV-vQ-jwf" firstAttribute="bottom" secondItem="GCh-xg-5cr" secondAttribute="bottom" id="9q3-5H-ySW"/>
+                                    <constraint firstAttribute="width" constant="240" id="HKI-5E-Kzf"/>
+                                    <constraint firstItem="GCh-xg-5cr" firstAttribute="leading" secondItem="ZCB-Yf-RNQ" secondAttribute="leading" constant="4" id="SXf-yH-Bze"/>
+                                    <constraint firstItem="GCh-xg-5cr" firstAttribute="centerY" secondItem="ZCB-Yf-RNQ" secondAttribute="centerY" id="WRa-yj-c4B"/>
+                                    <constraint firstItem="xqF-hD-vNi" firstAttribute="top" secondItem="mOV-vQ-jwf" secondAttribute="top" id="bfi-MN-uk9"/>
+                                    <constraint firstItem="xqF-hD-vNi" firstAttribute="bottom" secondItem="mOV-vQ-jwf" secondAttribute="bottom" id="cPb-nF-BZT"/>
+                                    <constraint firstItem="mOV-vQ-jwf" firstAttribute="leading" secondItem="GCh-xg-5cr" secondAttribute="trailing" id="jkK-RG-gcO"/>
+                                    <constraint firstAttribute="height" constant="26" id="p7J-Le-2ok"/>
+                                    <constraint firstItem="xqF-hD-vNi" firstAttribute="leading" secondItem="mOV-vQ-jwf" secondAttribute="trailing" id="qPF-6z-f2d"/>
+                                    <constraint firstItem="mOV-vQ-jwf" firstAttribute="top" secondItem="GCh-xg-5cr" secondAttribute="top" id="uOa-of-mU1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRM-OZ-070" userLabel="分割线View">
+                                <rect key="frame" x="12" y="50" width="264" height="4"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="BZH-6X-05S"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyB-oj-rQt" userLabel="数额View">
+                                <rect key="frame" x="12" y="63" width="264" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额500元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-Oc-XAv" customClass="TDStrokeLabel">
+                                        <rect key="frame" x="82" y="0.0" width="100" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面值550元(充500送50)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwC-CX-6Cm" customClass="TDStrokeLabel">
+                                        <rect key="frame" x="44" y="29" width="176" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2eQ-gh-wlC"/>
+                                    <constraint firstAttribute="bottom" secondItem="xwC-CX-6Cm" secondAttribute="bottom" id="Kpt-XI-BWE"/>
+                                    <constraint firstItem="xwC-CX-6Cm" firstAttribute="top" secondItem="pN8-Oc-XAv" secondAttribute="bottom" constant="5" id="PhB-yq-x4g"/>
+                                    <constraint firstItem="pN8-Oc-XAv" firstAttribute="top" secondItem="KyB-oj-rQt" secondAttribute="top" id="SC9-Zg-xEy"/>
+                                    <constraint firstItem="pN8-Oc-XAv" firstAttribute="centerX" secondItem="KyB-oj-rQt" secondAttribute="centerX" id="YcV-td-aCe"/>
+                                    <constraint firstAttribute="width" constant="240" id="qZu-SO-iE0"/>
+                                    <constraint firstItem="xwC-CX-6Cm" firstAttribute="centerX" secondItem="KyB-oj-rQt" secondAttribute="centerX" id="w8Q-13-vvY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2eQ-gh-wlC"/>
+                                        <exclude reference="qZu-SO-iE0"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期:2015.12.12-2016.01.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97x-nE-Cdo">
+                                <rect key="frame" x="12" y="129" width="165" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vipcard-daoqi.png" translatesAutoresizingMaskIntoConstraints="NO" id="ju9-Ro-yvY">
+                                <rect key="frame" x="231" y="0.0" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="1sl-JL-6Jm"/>
+                                    <constraint firstAttribute="height" constant="128" id="Kgc-GG-bxT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kgc-GG-bxT"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KyB-oj-rQt" firstAttribute="leading" secondItem="xRM-OZ-070" secondAttribute="leading" id="1gF-Yf-TwK"/>
+                            <constraint firstItem="ju9-Ro-yvY" firstAttribute="top" secondItem="4mU-95-5I9" secondAttribute="top" id="3JR-c6-0oX"/>
+                            <constraint firstAttribute="trailing" secondItem="xRM-OZ-070" secondAttribute="trailing" constant="12" id="3VG-zO-fOm"/>
+                            <constraint firstItem="xRM-OZ-070" firstAttribute="leading" secondItem="4mU-95-5I9" secondAttribute="leading" constant="12" id="4Te-3z-06f"/>
+                            <constraint firstItem="xRM-OZ-070" firstAttribute="top" secondItem="ZCB-Yf-RNQ" secondAttribute="bottom" constant="8" id="5oC-gX-7lh"/>
+                            <constraint firstAttribute="trailing" secondItem="ju9-Ro-yvY" secondAttribute="trailing" id="APo-41-Vr8"/>
+                            <constraint firstItem="KyB-oj-rQt" firstAttribute="centerX" secondItem="4mU-95-5I9" secondAttribute="centerX" id="HkC-2X-ZOe"/>
+                            <constraint firstItem="L4V-53-npG" firstAttribute="centerX" secondItem="4mU-95-5I9" secondAttribute="centerX" id="I5v-jr-m59"/>
+                            <constraint firstItem="KyB-oj-rQt" firstAttribute="top" secondItem="xRM-OZ-070" secondAttribute="bottom" constant="12" id="JIo-OU-oMR"/>
+                            <constraint firstItem="ZCB-Yf-RNQ" firstAttribute="leading" secondItem="4mU-95-5I9" secondAttribute="leading" constant="12" id="JLV-4q-fbb"/>
+                            <constraint firstItem="L4V-53-npG" firstAttribute="leading" secondItem="4mU-95-5I9" secondAttribute="leading" id="PDo-zW-8V3"/>
+                            <constraint firstItem="xRM-OZ-070" firstAttribute="top" secondItem="KyB-oj-rQt" secondAttribute="bottom" constant="-26" id="PdQ-aT-E2A"/>
+                            <constraint firstItem="KyB-oj-rQt" firstAttribute="trailing" secondItem="xRM-OZ-070" secondAttribute="trailing" id="Tag-1F-lPW"/>
+                            <constraint firstAttribute="bottom" secondItem="97x-nE-Cdo" secondAttribute="bottom" constant="16" id="YCK-SR-xUP"/>
+                            <constraint firstItem="97x-nE-Cdo" firstAttribute="leading" secondItem="4mU-95-5I9" secondAttribute="leading" constant="12" id="YDq-kB-hN5"/>
+                            <constraint firstItem="KyB-oj-rQt" firstAttribute="centerY" secondItem="4mU-95-5I9" secondAttribute="centerY" constant="8" id="iIN-yf-x1E"/>
+                            <constraint firstItem="ZCB-Yf-RNQ" firstAttribute="top" secondItem="4mU-95-5I9" secondAttribute="top" constant="16" id="p7m-c9-9nK"/>
+                            <constraint firstItem="L4V-53-npG" firstAttribute="top" secondItem="4mU-95-5I9" secondAttribute="top" id="r5L-ud-rve"/>
+                            <constraint firstItem="xwC-CX-6Cm" firstAttribute="top" secondItem="xRM-OZ-070" secondAttribute="bottom" constant="38" id="r8w-rd-tH0"/>
+                            <constraint firstAttribute="top" secondItem="xRM-OZ-070" secondAttribute="bottom" constant="8" id="x1s-y5-x7S"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PdQ-aT-E2A"/>
+                                <exclude reference="x1s-y5-x7S"/>
+                                <exclude reference="JIo-OU-oMR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4mU-95-5I9" secondAttribute="bottom" constant="16" id="0t1-J1-2Up"/>
+                    <constraint firstItem="4mU-95-5I9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hgq-zJ-g8Y"/>
+                    <constraint firstItem="4mU-95-5I9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PEM-bK-EX7"/>
+                    <constraint firstAttribute="trailing" secondItem="4mU-95-5I9" secondAttribute="trailing" constant="16" id="mxu-HM-l01"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="balanceLabel" destination="pN8-Oc-XAv" id="IUl-QR-nwb"/>
+                <outlet property="cardColorImageView" destination="L4V-53-npG" id="bby-Gb-WLl"/>
+                <outlet property="cardNameDownView" destination="xRM-OZ-070" id="XeD-yn-rMs"/>
+                <outlet property="cardNameLabel" destination="mOV-vQ-jwf" id="McQ-GZ-HbW"/>
+                <outlet property="cardNameLeftImageView" destination="GCh-xg-5cr" id="rNH-5b-DWo"/>
+                <outlet property="cardNameRightImageView" destination="xqF-hD-vNi" id="Lke-AD-OOu"/>
+                <outlet property="cardValidityLabel" destination="97x-nE-Cdo" id="UqY-fc-uUs"/>
+                <outlet property="faceValueLabel" destination="xwC-CX-6Cm" id="dIf-x1-Xe3"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="505.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="vipCard_background_lvse.png" width="292" height="163"/>
+        <image name="vipcard-daoqi.png" width="57" height="57"/>
+        <image name="yuanlv.png" width="8" height="22"/>
+        <image name="yuanlvyou.png" width="8" height="22"/>
+    </resources>
+</document>

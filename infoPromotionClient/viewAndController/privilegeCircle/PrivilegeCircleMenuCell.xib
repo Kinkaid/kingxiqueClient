@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="PrivilegeCircleMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我消费过的店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-OC-DpU">
+                        <rect key="frame" x="16" y="11" width="90" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILa-nK-3Vy">
+                        <rect key="frame" x="289" y="20" width="15" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Xdn-ui-NNr"/>
+                            <constraint firstAttribute="width" constant="15" id="hB4-uN-VkD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ILa-nK-3Vy" secondAttribute="trailing" constant="16" id="NKY-Pq-YFX"/>
+                    <constraint firstAttribute="trailing" secondItem="8fG-OC-DpU" secondAttribute="trailing" constant="149" id="PFj-lf-cgC"/>
+                    <constraint firstItem="8fG-OC-DpU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="QlQ-PG-M6W"/>
+                    <constraint firstAttribute="bottom" secondItem="8fG-OC-DpU" secondAttribute="bottom" constant="11" id="ZOf-T8-8fv"/>
+                    <constraint firstItem="8fG-OC-DpU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gj4-ZZ-G1m"/>
+                    <constraint firstItem="ILa-nK-3Vy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zzE-RF-wbT"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PFj-lf-cgC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_menuLabel" destination="8fG-OC-DpU" id="9DQ-Hm-YPG"/>
+                <outlet property="_selectImageView" destination="ILa-nK-3Vy" id="hsb-Wb-dC8"/>
+            </connections>
+            <point key="canvasLocation" x="428" y="646"/>
+        </tableViewCell>
+    </objects>
+</document>

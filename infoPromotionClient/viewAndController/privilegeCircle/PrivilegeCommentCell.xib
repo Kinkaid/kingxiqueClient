@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="23" id="UTL-X3-bWl" userLabel="PrivilegeCommentCell" customClass="PrivilegeCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTL-X3-bWl" id="m1w-rB-FSe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-tu-QEw">
+                        <rect key="frame" x="6" y="0.0" width="308" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="f0n-tu-QEw" firstAttribute="top" secondItem="m1w-rB-FSe" secondAttribute="top" id="Npl-Hb-nja"/>
+                    <constraint firstItem="f0n-tu-QEw" firstAttribute="leading" secondItem="m1w-rB-FSe" secondAttribute="leading" constant="6" id="a4L-6i-dR6"/>
+                    <constraint firstAttribute="trailing" secondItem="f0n-tu-QEw" secondAttribute="trailing" constant="6" id="eDe-Gu-KDI"/>
+                    <constraint firstAttribute="bottom" secondItem="f0n-tu-QEw" secondAttribute="bottom" id="n0p-uc-cCk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="f0n-tu-QEw" id="lJm-l3-2cJ"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="363.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="refundOrderCodeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1102 2103 210" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik3-sW-cvv">
+                        <rect key="frame" x="16" y="15" width="93" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnx-xE-NHO">
+                        <rect key="frame" x="272" y="4" width="48" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="0HZ-PL-one"/>
+                            <constraint firstAttribute="height" constant="40" id="OOl-BN-8iu"/>
+                        </constraints>
+                        <state key="normal" image="refundOrder_unselected.png"/>
+                        <connections>
+                            <action selector="selecteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DtE-1N-7vQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ik3-sW-cvv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OvL-KO-TWm"/>
+                    <constraint firstItem="ik3-sW-cvv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XmD-r0-nUe"/>
+                    <constraint firstItem="lnx-xE-NHO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iP7-cC-wA2"/>
+                    <constraint firstAttribute="trailing" secondItem="lnx-xE-NHO" secondAttribute="trailing" id="stB-vB-jk7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="codeOrReasonLabel" destination="ik3-sW-cvv" id="WlF-ML-Kvu"/>
+                <outlet property="selectedBtn" destination="lnx-xE-NHO" id="uqo-lu-Efo"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="377"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="refundOrder_unselected.png" width="20" height="20"/>
+    </resources>
+</document>
